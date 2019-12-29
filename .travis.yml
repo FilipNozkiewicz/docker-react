@@ -3,10 +3,10 @@ services:
   - docker
 
 before_install:
-  - docker build -t Filipnoz8888/docker-react -f Dockerfile.dev .
+  - docker build -t FilipNozkiewicz/docker-react -f Dockerfile.dev .
 
 script:
-  - docker run Filipnoz/docker-react npm run test -- --coverage
+  - docker run FilipNozkiewicz/docker-react npm run test -- --coverage
 
 deploy:
   edge: true 
